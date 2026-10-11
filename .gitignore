@@ -1,0 +1,29 @@
+# Maven / Java
+backend/target/
+*.class
+*.jar
+*.war
+.mvn/wrapper/maven-wrapper.jar
+
+# Node / React
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+*.local
+
+# Logs and databases
+*.log
+*.sqlite
+scratch/
+mysqldb/
+
+# IDE / OS
+.DS_Store
+.idea/
+*.iml
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
