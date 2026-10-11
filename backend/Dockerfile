@@ -24,7 +24,7 @@ COPY --from=build /workspace/target/shopsphere-backend-*.jar app.jar
 RUN chown -R shopsphere:shopsphere /app
 USER shopsphere
 
-ENV PORT=8080
-EXPOSE 8080
+ENV PORT=10000
+EXPOSE 10000
 
 ENTRYPOINT ["java", "-XX:+UseContainerSupport", "-XX:MaxRAMPercentage=75.0", "-Djava.security.egd=file:/dev/./urandom", "-jar", "app.jar"]

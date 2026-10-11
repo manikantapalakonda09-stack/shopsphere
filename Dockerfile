@@ -28,8 +28,8 @@ RUN chown -R shopsphere:shopsphere /app
 USER shopsphere
 
 # Cloud services (Render) inject PORT variable
-ENV PORT=8080
-EXPOSE 8080
+ENV PORT=10000
+EXPOSE 10000
 
 # Production JVM options with container memory limits for Render free tier (512MB RAM)
 ENTRYPOINT ["java", "-XX:+UseContainerSupport", "-XX:MaxRAMPercentage=75.0", "-Djava.security.egd=file:/dev/./urandom", "-jar", "app.jar"]
